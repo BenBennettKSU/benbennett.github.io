@@ -1,0 +1,331 @@
+/*
+  Base styles for Ben Bennett's GRC‑focused cybersecurity portfolio
+  The design aims for a clean, professional look with generous spacing,
+  consistent typography and modern cards. Colour variables can easily
+  be tweaked to refine the palette without changing individual rules.
+*/
+
+:root {
+  --primary: #0F62FE;
+  --secondary: #0043CE;
+  --bg: #FFFFFF;
+  --alt-bg: #F8FAFC;
+  --text: #1F2937;
+  --muted-text: #6B7280;
+  --card-bg: #FFFFFF;
+  --line: #E5E7EB;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  z-index: 1000;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.nav-links a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  border-radius: 6px;
+  color: var(--text);
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #3A8DFF 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.5;
+  color: #E2E8F0;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn-primary {
+  background: #ffffff;
+  color: var(--primary);
+}
+.btn-primary:hover {
+  background: #e2e8f0;
+}
+.btn-secondary {
+  background: var(--secondary);
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background: var(--primary);
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+.section-alt {
+  background: var(--alt-bg);
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+.section-intro {
+  margin-bottom: 2rem;
+  color: var(--muted-text);
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+.experience-card, .achievement-card, .evidence-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Role headers */
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.role-company, .role-date {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+.role-summary {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.experience-points, .evidence-points {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.experience-points li, .evidence-points li {
+  margin-bottom: 0.5rem;
+}
+.achievement-actions {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Grids */
+.experience-grid,
+.achievement-grid,
+.evidence-grid,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Evidence cards */
+.evidence-card .evidence-image img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: block;
+}
+.evidence-content h3 {
+  margin-bottom: 0.5rem;
+}
+.evidence-context {
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+.evidence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+/* Tag styling */
+.tag-cloud, .evidence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+  align-items: center;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: var(--alt-bg);
+  color: var(--primary);
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Skill groups */
+.skill-group {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.skill-group h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+}
+
+/* Education */
+.education-card {
+  text-align: left;
+}
+.education-card h3 {
+  margin-bottom: 0.5rem;
+}
+.education-card p {
+  margin-bottom: 0.25rem;
+}
+
+/* Contact */
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.footer p {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
