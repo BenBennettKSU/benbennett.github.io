@@ -1,9 +1,4 @@
-/*
-  Base styles for Ben Bennett's GRC‑focused cybersecurity portfolio
-  The design aims for a clean, professional look with generous spacing,
-  consistent typography and modern cards. Colour variables can easily
-  be tweaked to refine the palette without changing individual rules.
-*/
+
 
 :root {
   --primary: #0F62FE;
@@ -130,13 +125,19 @@ a:hover {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.65rem 1.4rem;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  transition: background 0.2s ease, color 0.2s ease;
+  background: #ffffff;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
 }
 .btn-primary {
   background: #ffffff;
