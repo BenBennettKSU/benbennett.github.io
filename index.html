@@ -1,33 +1,416 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ben Workingman</title>
-    <style>
-        body { font-family: Arial; margin: 40px; }
-        h1 { color: #1a73e8; }
-        section { margin-bottom: 30px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Bennett | Cybersecurity Student | GRC Portfolio</title>
+  <meta name="description" content="Ben Bennett's cybersecurity portfolio focused on governance, risk, and compliance, audit support, control mapping, and compliance evidence management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">Ben Bennett</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <h1>Ben Workingman</h1>
-    <p>Cybersecurity Analyst | GRC | NIST CSF 2.0</p>
-
-    <section>
-        <h2>Projects</h2>
-        <p><b>NIST CSF 2.0 Implementation</b> – Conducted gap analysis and control mapping</p>
-        <p><b>Vulnerability Assessment</b> – Used Greenbone & Nmap to identify risks</p>
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Graduating May 2026 · Governance, Risk, and Compliance</p>
+          <h1>Ben Bennett</h1>
+          <p class="hero-title">Cybersecurity Student | GRC-Focused</p>
+          <p class="hero-summary">
+            Early-career cybersecurity professional with hands-on experience supporting enterprise audits, control documentation,
+            framework alignment, and audit readiness across multiple compliance programs. I am pursuing GRC roles where I can turn
+            security requirements into organized, measurable, business-aligned compliance work.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#evidence">View Projects</a>
+            <a class="btn btn-secondary" href="assets/Ben_Bennett_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="stat-card">
+              <strong>Audit Support</strong>
+              <span>ISO 27001, NIST, PCI DSS, SOC 2</span>
+            </div>
+            <div class="stat-card">
+              <strong>Hands-On Tools</strong>
+              <span>HyperProof, Excel, Word, PowerPoint</span>
+            </div>
+            <div class="stat-card">
+              <strong>Focus</strong>
+              <span>GRC, control mapping, evidence management</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel card">
+          <p class="panel-label">Professional Snapshot</p>
+          <ul class="check-list">
+            <li>Supports audit and compliance initiatives across recognized frameworks</li>
+            <li>Experienced in evidence collection, documentation quality, and workflow tracking</li>
+            <li>Builds practical process improvements through automation and organized control support</li>
+            <li>Comfortable coordinating with cross-functional and global stakeholders</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
-        <p>NIST CSF, SIEM, Risk Assessment, Zero Trust</p>
+    <section id="about" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Grounded in audit support, controls, and compliance execution</h2>
+        </div>
+        <p class="lead">
+          I am a cybersecurity student at Kennesaw State University graduating in May 2026, with a professional focus on governance,
+          risk, and compliance. Through my internship experience, I have supported audit activity across ISO 27001, NIST SP 800-53,
+          NIST CSF 2.0, PCI DSS, and SOC 2 environments while helping manage evidence, improve documentation quality, and maintain
+          control workflows. I am particularly interested in work that connects security expectations to practical execution through
+          organized evidence, clear control alignment, and measurable compliance support.
+        </p>
+      </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>Experience aligned to GRC, audit, and operational accountability</h2>
+        </div>
+
+        <div class="experience-grid">
+          <article class="card experience-card featured">
+            <div class="role-header">
+              <div>
+                <h3>Information Security Intern</h3>
+                <p class="role-company">Scientific Games</p>
+              </div>
+              <p class="role-date">2025 – Present</p>
+            </div>
+            <p class="role-summary">
+              Most relevant experience for GRC roles, centered on enterprise audit support, framework alignment, documentation quality,
+              and workflow execution inside a formal compliance environment.
+            </p>
+            <ul class="experience-points">
+              <li>Supported enterprise audits across ISO 27001, NIST SP 800-53 Rev. 5, NIST CSF 2.0, PCI DSS 4.0.1, and SOC 2 Type II.</li>
+              <li>Contributed to NIST CSF 2.0 implementation and assessment work tied to organizational maturity reporting.</li>
+              <li>Managed audit evidence and deliverables to improve documentation quality, audit readiness, and control support.</li>
+              <li>Mapped policies and controls across frameworks and maintained workflows in HyperProof.</li>
+              <li>Automated evidence collection processes to reduce manual effort and support faster audit turnaround.</li>
+              <li>Built a Copilot Studio automation agent to streamline SOP workflows and improve documentation consistency.</li>
+              <li>Coordinated with cross-functional and global teams to close documentation gaps and support audit completion.</li>
+            </ul>
+          </article>
+
+          <article class="card experience-card">
+            <div class="role-header">
+              <div>
+                <h3>Onsite Merchandise and Sales Manager</h3>
+                <p class="role-company">Perfect Game</p>
+              </div>
+              <p class="role-date">Apr 2024 – Apr 2025</p>
+            </div>
+            <p class="role-summary">
+              Operational leadership experience that reinforces business maturity, execution discipline, and accountability under pressure.
+            </p>
+            <ul class="experience-points">
+              <li>Coordinated onsite team assignments and workflows during high-volume events.</li>
+              <li>Served as a communication bridge between frontline staff and management.</li>
+              <li>Executed operational tasks with accuracy in fast-paced environments.</li>
+              <li>Maintained organization, follow-through, and accountability across shifting priorities.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <section id="evidence" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Projects & Evidence</p>
+          <h2>Selected proof of audit and compliance work</h2>
+          <p class="section-intro">
+            These evidence cards are designed to present screenshots as proof of work rather than simple image galleries. Each item adds
+            context, explains what the artifact shows, and ties the activity back to audit readiness, control management, or framework support.
+          </p>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/iso-27001.png" alt="HyperProof screenshot showing ISO 27001:2022 program activity" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Audit Evidence Management</span>
+                <span class="tag muted">ISO 27001:2022</span>
+              </div>
+              <h3>ISO 27001 Evidence and Control Tracking</h3>
+              <p><strong>Context:</strong> Screenshot of an active ISO 27001:2022 work area showing controls, proof artifacts, and assigned contributors.</p>
+              <p><strong>Problem:</strong> Audit programs require evidence to be organized, current, and tied to control ownership.</p>
+              <p><strong>Action:</strong> Supported evidence collection and workflow maintenance inside HyperProof for a live compliance environment.</p>
+              <p><strong>Outcome:</strong> Demonstrates structured control oversight, contributor coordination, and documentation readiness for audit support.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, ISO 27001:2022</span>
+                <span><strong>Why it matters:</strong> Strong evidence discipline helps reduce gaps, improve traceability, and support audit efficiency.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/nist-csf-2.0.png" alt="HyperProof screenshot showing NIST CSF 2.0 controls and proof tracking" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Control Mapping and Framework Alignment</span>
+                <span class="tag muted">NIST CSF 2.0</span>
+              </div>
+              <h3>NIST CSF 2.0 Assessment Support</h3>
+              <p><strong>Context:</strong> Screenshot showing a NIST CSF 2.0 control set with proof artifacts, critical status, and assigned stakeholders.</p>
+              <p><strong>Problem:</strong> Framework implementation work depends on clear control ownership and evidence-backed maturity assessment.</p>
+              <p><strong>Action:</strong> Contributed to control support, evidence management, and NIST CSF 2.0 assessment-related work.</p>
+              <p><strong>Outcome:</strong> Reflects hands-on participation in a formal framework assessment and ongoing compliance tracking.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, NIST CSF 2.0</span>
+                <span><strong>Why it matters:</strong> Shows readiness to support measurable, structured GRC work tied to recognized security frameworks.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/nist-800-53.png" alt="HyperProof screenshot showing NIST 800-53 Rev 5 program card" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Compliance Documentation Support</span>
+                <span class="tag muted">NIST SP 800-53 Rev. 5</span>
+              </div>
+              <h3>NIST 800-53 Control Library Oversight</h3>
+              <p><strong>Context:</strong> Screenshot showing a large NIST SP 800-53 Rev. 5 control population managed within a compliance workflow.</p>
+              <p><strong>Problem:</strong> Larger control sets increase the need for disciplined documentation, organization, and progress visibility.</p>
+              <p><strong>Action:</strong> Helped maintain control-related workflows and documentation support across a broad requirements set.</p>
+              <p><strong>Outcome:</strong> Demonstrates exposure to complex control environments where structure and consistency matter.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, NIST SP 800-53 Rev. 5</span>
+                <span><strong>Why it matters:</strong> Employers can see familiarity with large control frameworks and the workflow discipline they require.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/pci-dss-4.0.1.png" alt="HyperProof screenshot showing PCI DSS 4.0.1 program tracking" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">HyperProof Workflow Management</span>
+                <span class="tag muted">PCI DSS 4.0.1</span>
+              </div>
+              <h3>PCI DSS Control and Label Management</h3>
+              <p><strong>Context:</strong> Screenshot showing PCI DSS 4.0.1 activity with controls, labels, proof artifacts, and assigned users.</p>
+              <p><strong>Problem:</strong> Payment card compliance requires organized control tracking and defensible documentation support.</p>
+              <p><strong>Action:</strong> Worked within the platform environment where control status, proof collection, and labeling were actively maintained.</p>
+              <p><strong>Outcome:</strong> Signals practical exposure to compliance operations that affect regulated business requirements.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, PCI DSS 4.0.1</span>
+                <span><strong>Why it matters:</strong> Reinforces readiness for regulated environments where evidence quality and control visibility are critical.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/soc-2-type-ii.png" alt="HyperProof screenshot showing SOC 2 Type II control set" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Audit Readiness</span>
+                <span class="tag muted">SOC 2 Type II</span>
+              </div>
+              <h3>SOC 2 Type II Control Environment Support</h3>
+              <p><strong>Context:</strong> Screenshot showing a SOC 2 Type II program area with a large control count and designated contributors.</p>
+              <p><strong>Problem:</strong> Continuous compliance efforts depend on clear workflow ownership and documented support for controls.</p>
+              <p><strong>Action:</strong> Supported compliance documentation and control-related workflow management in a SOC 2 environment.</p>
+              <p><strong>Outcome:</strong> Demonstrates exposure to ongoing assurance work that values organization, timeliness, and documentation quality.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, SOC 2 Type II</span>
+                <span><strong>Why it matters:</strong> Shows practical alignment with one of the most recognizable audit frameworks used by employers and customers.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card">
+            <div class="evidence-media">
+              <img src="assets/images/musl-rule-2.png" alt="HyperProof screenshot showing MUSL Rule 2 control area" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Framework Support</span>
+                <span class="tag muted">MUSL Rule 2</span>
+              </div>
+              <h3>MUSL Rule 2 Control Support</h3>
+              <p><strong>Context:</strong> Screenshot of a MUSL Rule 2 compliance area with controls and assigned participants.</p>
+              <p><strong>Problem:</strong> Supporting specialized requirements still requires the same discipline in documentation, ownership, and workflow tracking.</p>
+              <p><strong>Action:</strong> Participated in the control support environment for MUSL Rule 2 within the broader audit program.</p>
+              <p><strong>Outcome:</strong> Adds breadth to the portfolio by showing support beyond the most common commercial frameworks.</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> HyperProof, MUSL Rule 2</span>
+                <span><strong>Why it matters:</strong> Indicates adaptability across multiple control environments and compliance obligations.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card evidence-card placeholder-card">
+            <div class="evidence-media">
+              <img src="assets/images/evidence-placeholder.png" alt="Placeholder screenshot for future evidence" class="expandable-image" />
+            </div>
+            <div class="evidence-content">
+              <div class="evidence-tag-row">
+                <span class="tag">Placeholder Card</span>
+                <span class="tag muted">Replace Me</span>
+              </div>
+              <h3>[Add Your Evidence Title Here]</h3>
+              <p><strong>Screenshot filename:</strong> [example-file-name.png]</p>
+              <p><strong>Context:</strong> [Briefly explain where the screenshot came from and what process it supports.]</p>
+              <p><strong>Problem:</strong> [What compliance or audit need existed?]</p>
+              <p><strong>Action:</strong> [What did you do or help support?]</p>
+              <p><strong>Outcome:</strong> [What did this improve, demonstrate, or help close?]</p>
+              <div class="evidence-meta">
+                <span><strong>Tools / Frameworks:</strong> [Tool names, frameworks]</span>
+                <span><strong>Optional metric / impact:</strong> [Add metric, maturity score, time saved, or readiness result]</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Relevant frameworks, tools, and operational capabilities</h2>
+        </div>
+
+        <div class="skill-grid">
+          <article class="card skill-card">
+            <h3>Frameworks &amp; Standards</h3>
+            <div class="tag-cloud">
+              <span class="tag">ISO 27001:2022</span>
+              <span class="tag">ISO 42001:2023</span>
+              <span class="tag">NIST SP 800-53 Rev. 5</span>
+              <span class="tag">NIST CSF 2.0</span>
+              <span class="tag">PCI DSS 4.0.1</span>
+              <span class="tag">SOC 2 Type II</span>
+              <span class="tag">MUSL Rule 2</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3>GRC &amp; Risk</h3>
+            <div class="tag-cloud">
+              <span class="tag">Risk Assessment</span>
+              <span class="tag">Control Validation</span>
+              <span class="tag">Compliance Documentation</span>
+              <span class="tag">Audit Management</span>
+              <span class="tag">Regulatory Compliance</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Security Operations</h3>
+            <div class="tag-cloud">
+              <span class="tag">Data Loss Prevention (DLP)</span>
+              <span class="tag">Security Incident Response</span>
+              <span class="tag">SIEM / Log Analysis / Monitoring</span>
+              <span class="tag">Security Awareness Training Compliance</span>
+            </div>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Tools</h3>
+            <div class="tag-cloud">
+              <span class="tag">HyperProof</span>
+              <span class="tag">CrowdStrike</span>
+              <span class="tag">Netskope</span>
+              <span class="tag">Microsoft Excel</span>
+              <span class="tag">Microsoft Word</span>
+              <span class="tag">Microsoft PowerPoint</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <article class="card education-card">
+          <div class="role-header">
+            <div>
+              <h3>Kennesaw State University</h3>
+              <p class="role-company">BBA in Cyber Security · Minor in Information Systems</p>
+            </div>
+            <p class="role-date">Expected May 2026</p>
+          </div>
+          <p class="education-meta">Dean’s List: 2023, 2024, 2025</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Contact</p>
+          <h2>Professional contact information</h2>
+        </div>
+        <article class="card contact-card">
+          <div class="contact-list">
+            <a href="mailto:your-email@example.com"><strong>Email:</strong> your-email@example.com</a>
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener"><strong>LinkedIn:</strong> linkedin.com/in/your-linkedin</a>
+            <a href="https://github.com/your-github" target="_blank" rel="noopener"><strong>GitHub:</strong> github.com/your-github</a>
+            <a href="assets/Ben_Bennett_Resume.pdf" target="_blank" rel="noopener"><strong>Resume:</strong> View PDF</a>
+          </div>
+          <p class="contact-note">Replace the placeholder links above with your final contact information before publishing.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Ben Bennett. Built for a GRC-focused cybersecurity portfolio.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <img id="lightboxImage" src="" alt="Expanded evidence image" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
